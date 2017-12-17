@@ -38,6 +38,7 @@ module.exports = {
 
     bigNumberify: bigNumber.bigNumberify,
     BigNumber: bigNumber.BigNumber,
+    isBigNumber: bigNumber.isBigNumber,
 
     hexlify: convert.hexlify,
 
