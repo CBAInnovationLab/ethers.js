@@ -142,7 +142,7 @@ var formatBlock = {
 
     timestamp: checkNumber,
     nonce: allowNull(utils.hexlify),
-    difficulty: allowNull(checkNumber),
+    difficulty: utils.bigNumberify,
 
     gasLimit: utils.bigNumberify,
     gasUsed: utils.bigNumberify,
