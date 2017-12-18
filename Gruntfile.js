@@ -12,25 +12,7 @@ var versions = {
 
 var depVersions = require('./package.json').dependencies;
 
-// Make sure the versions we are building a dist from are the most rescent
-[ 'contracts', 'providers', 'utils', 'wallet'].forEach(function(name) {
-    var npmVersion = require('./node_modules/ethers-' + name + '/package.json').version;
-    var liveVersion = require('./' + name + '/package.json').version;
-    var depVersion = depVersions['ethers-' + name];
 
-    if (npmVersion !== liveVersion) {
-        console.log(name, ('npm=' + npmVersion), ('live=' + liveVersion));
-        throw new Error('version mismatch for ' + name + ' - redo npm install');
-    }
-    if (npmVersion !== depVersion) {
-        console.log(name, ('npm=' + npmVersion), ('depVersion=' + depVersion));
-        throw new Error('dependency version mismatch for ' + name + ' - update package.json');
-    }
-
-    versions[name] = liveVersion;
-
-    console.log('Including: ', name + '@' + npmVersion);
-});
 
 
 
