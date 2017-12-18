@@ -5,7 +5,7 @@ var JsonRpcProvider = require('./json-rpc-provider');
 
 var utils = (function() {
     return {
-        defineProperty: require('ethers-utils/properties.js').defineProperty
+        defineProperty: require('../utils/properties.js').defineProperty
     }
 })();
 

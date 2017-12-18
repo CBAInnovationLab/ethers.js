@@ -1,7 +1,7 @@
 'use strict';
 
 var scrypt = require('scrypt-js');
-var utils = require('ethers-utils');
+var utils = require('../utils');
 
 var HDNode = require('./hdnode');
 

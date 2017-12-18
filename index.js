@@ -1,9 +1,9 @@
 'use strict';
 
-var contracts = require('ethers-contracts');
-var providers = require('ethers-providers');
-var utils = require('ethers-utils');
-var wallet = require('ethers-wallet');
+var contracts = require('./contracts');
+var providers = require('./providers');
+var utils = require('./utils');
+var wallet = require('./wallet');
 
 module.exports = {
     SigningKey: wallet.SigningKey,
@@ -22,4 +22,4 @@ module.exports = {
     _SigningKey: wallet.SigningKey,
 };
 
-require('ethers-utils/standalone.js')(module.exports);
+require('./utils/standalone.js')(module.exports);

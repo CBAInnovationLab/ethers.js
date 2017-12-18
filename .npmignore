@@ -4,11 +4,5 @@ Gruntfile.js
 docs/
 examples/
 
-# These are all included by their sub-packages in npm
-utils/
-contracts/
-providers/
-wallet/
-
 # To run tests, checkout GitHub
 tests/

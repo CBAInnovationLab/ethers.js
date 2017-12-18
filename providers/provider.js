@@ -7,14 +7,14 @@ var XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 var networks = require('./networks.json');
 
 var utils = (function() {
-    var convert = require('ethers-utils/convert');
+    var convert = require('../utils/convert');
     return {
-        defineProperty: require('ethers-utils/properties').defineProperty,
+        defineProperty: require('../utils/properties').defineProperty,
 
-        getAddress: require('ethers-utils/address').getAddress,
-        getContractAddress: require('ethers-utils/contract-address').getContractAddress,
+        getAddress: require('../utils/address').getAddress,
+        getContractAddress: require('../utils/contract-address').getContractAddress,
 
-        bigNumberify: require('ethers-utils/bignumber').bigNumberify,
+        bigNumberify: require('../utils/bignumber').bigNumberify,
         arrayify: convert.arrayify,
 
         hexlify: convert.hexlify,
@@ -25,11 +25,11 @@ var utils = (function() {
 
         stripHexZeros: convert.stripHexZeros,
 
-        namehash: require('ethers-utils/namehash'),
+        namehash: require('../utils/namehash'),
 
-        toUtf8String: require('ethers-utils/utf8').toUtf8String,
+        toUtf8String: require('../utils/utf8').toUtf8String,
 
-        RLP: require('ethers-utils/rlp'),
+        RLP: require('../utils/rlp'),
     }
 })();
 

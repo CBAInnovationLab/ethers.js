@@ -2,21 +2,21 @@
 
 // See: https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI
 
-var throwError = require('ethers-utils/throw-error');
+var throwError = require('../utils/throw-error');
 
 var utils = (function() {
-    var convert = require('ethers-utils/convert.js');
-    var utf8 = require('ethers-utils/utf8.js');
+    var convert = require('../utils/convert.js');
+    var utf8 = require('../utils/utf8.js');
 
     return {
-        defineProperty: require('ethers-utils/properties.js').defineProperty,
+        defineProperty: require('../utils/properties.js').defineProperty,
 
         arrayify: convert.arrayify,
         padZeros: convert.padZeros,
 
-        bigNumberify: require('ethers-utils/bignumber.js').bigNumberify,
+        bigNumberify: require('../utils/bignumber.js').bigNumberify,
 
-        getAddress: require('ethers-utils/address').getAddress,
+        getAddress: require('../utils/address').getAddress,
 
         concat: convert.concat,
 
@@ -26,7 +26,7 @@ var utils = (function() {
         hexlify: convert.hexlify,
         isHexString: convert.isHexString,
 
-        keccak256: require('ethers-utils/keccak256.js'),
+        keccak256: require('../utils/keccak256.js'),
     };
 })();
 

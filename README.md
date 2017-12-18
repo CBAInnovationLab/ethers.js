@@ -1,5 +1,11 @@
-ethers.js
-=========
+node-ethers
+===========
+
+About
+----------
+
+Fork of [ethers.js](https://github.com/ethers-io/ethers.js) simplified to a single package that is better suited to NodeJS.
+
 
 [![npm version](https://badge.fury.io/js/ethers.svg)](https://badge.fury.io/js/ethers)
 
@@ -23,19 +29,10 @@ Complete Ethereum wallet implementation and utilities in JavaScript.
 Installing
 ----------
 
-To use in a browser:
-
-```html
-<script charset="utf-8"
-        src="https://cdn.ethers.io/scripts/ethers-v2.min.js"
-        type="text/javascript">
-</script>
-```
-
 To use in [node.js](https://nodejs.org/):
 
 ```
-/Users/ethers/my-app> npm install --save ethers
+/Users/ethers/my-app> npm install --save node-ethers
 ```
 
 

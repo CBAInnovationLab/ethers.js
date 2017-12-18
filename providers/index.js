@@ -29,7 +29,7 @@ module.exports = {
     Provider: Provider,
 }
 
-require('ethers-utils/standalone.js')({
+require('../utils/standalone.js')({
     providers: module.exports
 });
 

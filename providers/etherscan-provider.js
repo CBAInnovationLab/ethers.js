@@ -3,9 +3,9 @@
 var Provider = require('./provider.js');
 
 var utils = (function() {
-    var convert = require('ethers-utils/convert.js');
+    var convert = require('../utils/convert.js');
     return {
-        defineProperty: require('ethers-utils/properties.js').defineProperty,
+        defineProperty: require('../utils/properties.js').defineProperty,
 
         hexlify: convert.hexlify,
 
