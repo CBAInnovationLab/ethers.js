@@ -1,5 +1,10 @@
-ethers.js
+node-ethers 
 =========
+ 
+About 
+---------- 
+ 
+Fork of [ethers.js](https://github.com/ethers-io/ethers.js) simplified to a single package that is better suited to NodeJS. 
 
 [![npm version](https://badge.fury.io/js/ethers.svg)](https://badge.fury.io/js/ethers)
 
@@ -35,7 +40,7 @@ To use in a browser:
 To use in [node.js](https://nodejs.org/):
 
 ```
-/Users/ethers/my-app> npm install --save ethers
+/Users/ethers/my-app> npm install --save node-ethers
 ```
 
 

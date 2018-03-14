@@ -1,10 +1,10 @@
 {
-  "name": "ethers",
+  "name": "node-ethers",
   "version": "3.0.4",
   "description": "Ethereum wallet library.",
   "main": "index.js",
   "scripts": {
-    "test": "if [ \"$RUN_PHANTOMJS\" = \"1\" ]; then npm run-script test-phantomjs; else npm run-script test-node; fi",
+    "test": "./node_modules/.bin/mocha tests/test-*.js",
     "test-node": "./node_modules/.bin/mocha tests/test-*.js",
     "test-phantomjs": "./node_modules/.bin/grunt dist && ./node_modules/.bin/grunt --gruntfile Gruntfile-test.js dist && phantomjs --web-security=false ./node_modules/mocha-phantomjs-core/mocha-phantomjs-core.js ./tests/test.html",
     "version": "grunt dist"
@@ -42,10 +42,10 @@
     "ethereum",
     "wallet"
   ],
-  "author": "Richard Moore <me@ricmoo.com>",
+  "author": "Gokulnath Reddy <gokulnath.yarramareddy@cba.com.au>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ethers-io/ethers-wallet.git"
+    "url": "git@github.com:CBAInnovationLab/ethers.js.git"
   },
   "license": "MIT"
 }
