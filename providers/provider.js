@@ -482,7 +482,7 @@ function Provider(network) {
         set: function(value) {
             setTimeout(function() {
                 if (value && !poller) {
-                    poller = setInterval(doPoll, 4000);
+                    poller = setInterval(doPoll, 500);
 
                 } else if (!value && poller) {
                     clearInterval(poller);
